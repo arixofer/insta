@@ -21,31 +21,15 @@
         .screen.active {
             display: block;
         }
-        .counter {
-            font-family: 'Press Start 2P', cursive; /* Digital-style font */
-            font-size: 6em; /* Increased size */
-            color: yellow; /* Yellow color */
-            font-weight: normal; /* Not bold */
-            margin-top: 50px;
-        }
-        .qrcode {
-            margin-top: 50px; /* Add 50 pixels space above the QR code */
-        }
-        .qrcode img {
-            width: 150px;
-            height: 150px;
-        }
-        .image img {
-            max-width: 900px; /* Limit the width to 900 pixels */
-            height: auto; /* Preserve aspect ratio */
-        }
-        .extra-image img {
-            max-width: 500px; /* Limit the width to 500 pixels */
-            height: auto; /* Preserve aspect ratio */
-        }
         .banner {
             font-size: 2em;
             margin-top: 20px;
+        }
+        .upload {
+            margin-top: 20px;
+        }
+        .upload input {
+            margin-top: 10px;
         }
         .button {
             background-color: #007bff;
@@ -59,11 +43,23 @@
         .button:hover {
             background-color: #0056b3;
         }
-        .upload {
-            margin-top: 20px;
+        .image img, .extra-image img {
+            max-width: 900px; /* Limit the width to 900 pixels */
+            height: auto; /* Preserve aspect ratio */
         }
-        .upload input {
-            margin-top: 10px;
+        .counter {
+            font-family: 'Press Start 2P', cursive; /* Digital-style font */
+            font-size: 6em; /* Increased size */
+            color: yellow; /* Yellow color */
+            font-weight: normal; /* Not bold */
+            margin-top: 50px;
+        }
+        .qrcode {
+            margin-top: 50px; /* Add 50 pixels space above the QR code */
+        }
+        .qrcode img {
+            width: 150px;
+            height: 150px;
         }
     </style>
 </head>
@@ -81,6 +77,10 @@
         <div class="image">
             <!-- Display the uploaded image here -->
             <img id="uploadedImage" src="" alt="Uploaded Image">
+        </div>
+        <div class="image">
+            <!-- Image above the counter -->
+            <img src="URL_TO_YOUR_IMAGE" alt="Top Image">
         </div>
         <div class="counter">
             <span id="counterValue">006523</span>
